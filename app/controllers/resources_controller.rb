@@ -1,5 +1,6 @@
 class ResourcesController < ApplicationController
   def index
+  	@resources = Resource.all.order(:name)
   end
 
   def new
