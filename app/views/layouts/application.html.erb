@@ -9,28 +9,29 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" role="navigation">
   	<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="/">LGBTQ Allies</a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+				</button>
+				<div class="nav-icon-div">
+				<a class="navbar-brand" href="/"><img alt="brand" src="/assets/flag.jpg" width="50" height="50"></a>
+				</div>
 			</div>
-			<ul class="nav navbar-nav">
-				<li class="active">
-					<a href="/">Home</a>
-				</li>
-				<li>
-					<a href="/resources">View Resources</a>
-				</li>
-				<li>
-					<a href="/categories">View Categories</a>
-				</li>
-				<li>
-					<a href="/resources/new">Add New Resource</a>
-				</li>
-				<li>
-					<a href="/categories/new">Add New Category</a>
-				</li>
-			</ul>
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav pull-right">
+					<li class="active"><a href="/">Home</a></li>
+					<li><a href="/resources">View Resources</a></li>
+					<li><a href="/categories">View Categories</a></li>
+					<li><a href="/resources/new">Add New Resource</a></li>
+					<li><a href="/categories/new">Add New Category</a></li>
+				</ul>
+			</div>
   	</div>
   </nav>
     <%= yield %>
