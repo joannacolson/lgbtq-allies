@@ -1,2 +1,22 @@
-<h1>Categories#show</h1>
-<p>Find me in app/views/categories/show.html.erb</p>
+<h1 class="text-center">Category: <%= @category.name %></h1>
+
+<h2 class="text-center">Resources that provide <%= @category.name %></h2>
+
+<div class="container text-center">
+	<% if @category.resources.length > 0 %>
+		<% @category.resources.each do |r| %>
+			<div class="alert alert-info">
+				<h3>
+					<a href="/resources/<%= r.id %>"><%= r.name %></a>
+				</h3>
+			</div>
+		<% end %>
+	<% else %>
+		<div class="alert alert-info">
+			Category <%= @category.name %> does not have a resource yet.
+		</div>
+	<% end %>
+	<h2>Available Actions:</h2>
+	<%= link_to 'Edit This Category?', edit_category_path(@category), method: :get, :class => "btn btn-warning" %>
+	<%= link_to 'Delete This Category?', category_path(@category), method: :delete, :class => "btn btn-danger" %>
+</div>
