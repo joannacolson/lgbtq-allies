@@ -1,2 +1,27 @@
-<h1>Resources#show</h1>
-<p>Find me in app/views/resources/show.html.erb</p>
+<h1 class="text-center">Resource: <%= @resource.name %></h1>
+<div class="container">
+	<h4 class="text-center">Address: <%= @resource.address %></h4>
+	<h4 class="text-center">Website: <%= @resource.website %></h4>
+	<h4 class="text-center">Phone: <%= @resource.phone %></h4>
+	<h4 class="text-center">Description: <%= @resource.description %></h4>
+</div>
+<h2 class="text-center">Categories provided by <%= @resource.name %></h2>
+
+<div class="container text-center">
+	<% if @resource.categories.length > 0 %>
+		<% @resource.categories.each do |c| %>
+			<div class="alert alert-info">
+				<h3>
+					<a href="/categories/<%= c.id %>"><%= c.name %></a>
+				</h3>
+			</div>
+		<% end %>
+	<% else %>
+		<div class="alert alert-info">
+			Resource <%= @resource.name %> does not have a category yet.
+		</div>
+	<% end %>
+	<h2>Available Actions:</h2>
+	<%= link_to 'Edit This Resource?', edit_resource_path(@resource), method: :get, :class => "btn btn-warning" %>
+	<%= link_to 'Delete This Resource?', resource_path(@resource), method: :delete, :class => "btn btn-danger" %>
+</div>
