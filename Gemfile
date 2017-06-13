@@ -32,6 +32,10 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap-sass'
 gem 'jquery-rails'
+gem 'gmaps4rails'
+gem 'underscore-rails'
+gem 'geocoder'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
