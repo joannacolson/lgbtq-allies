@@ -9,7 +9,85 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
+ * require_tree .
+ *= require_self
  */
 
+// Imports
 @import "bootstrap-sprockets";
 @import "bootstrap";
+// -----------Custom CSS------------
+body {
+    background-color: #4c8f95;
+}
+
+h1,
+h3,
+h5 {
+    color: beige;
+}
+
+.navbar-brand {
+    height: 100%;
+    padding: .5em;
+}
+
+nav.navbar.navbar-default {
+    margin-bottom: 0;
+    background: linear-gradient(115deg, black 20%, #013b51)
+}
+
+.img-circle {
+    width: 200px;
+    height: 200px;
+    // z-index: 0;
+    // position: absolute;
+    // float: right;
+}
+
+// -----------Home Page------------
+.home-image-div {
+    background-image: url("/assets/cityscape.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 25em;
+    padding-bottom: 7em;
+}
+
+.home-text {
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin-top: 0;
+    // z-index: 0;
+}
+
+.about,
+.testimonials,
+.img-circle {
+    box-shadow: 0 0 4px black;
+}
+
+img:hover {
+    opacity: 0.8;
+    transition: .5s ease;
+}
+
+.people,
+.about {
+    margin: 5em 0;
+}
+
+.testimonials,
+.about {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    padding: 2em;
+}
+
+// -----------Resources------------
+// -----------Categories------------

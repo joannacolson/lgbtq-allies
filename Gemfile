@@ -37,6 +37,10 @@ gem 'underscore-rails'
 gem 'geocoder'
 gem 'json'
 
+#browser-sync to make life easier
+group :development do
+  gem 'browser_sync_rails'
+end
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
