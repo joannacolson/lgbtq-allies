@@ -9,7 +9,7 @@ class ResourcesController < ApplicationController
       @places.push(obj)
     end
     @places = @places.to_json
-    puts @places
+    # puts @places
   end
 
   def new
