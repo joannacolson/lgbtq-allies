@@ -16,17 +16,20 @@
 // Imports
 @import "bootstrap-sprockets";
 @import "bootstrap";
-// -----------Custom CSS------------
+// =============Custom CSS=============
+// -----------Global------------
 body {
-    background-color: #4c8f95;
+    background-color: #88a7aa;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1,
 h3,
 h5 {
-    color: beige;
+    color: white;
 }
 
+// -----------Nav------------
 .navbar-brand {
     height: 100%;
     padding: .5em;
@@ -37,15 +40,12 @@ nav.navbar.navbar-default {
     background: linear-gradient(115deg, black 20%, #013b51)
 }
 
-.img-circle {
-    width: 200px;
-    height: 200px;
-    // z-index: 0;
-    // position: absolute;
-    // float: right;
+// -----------Home Page------------
+.home-image-div h1,
+h3 {
+    font-family: 'Bubbler One', sans-serif;
 }
 
-// -----------Home Page------------
 .home-image-div {
     background-image: url("/assets/cityscape.jpg");
     height: 100%;
@@ -54,8 +54,7 @@ nav.navbar.navbar-default {
     background-size: cover;
     background-position: center;
     width: 100%;
-    padding-top: 25em;
-    padding-bottom: 7em;
+    padding: 10em 0 10em 0;
 }
 
 .home-text {
@@ -63,7 +62,22 @@ nav.navbar.navbar-default {
     left: 0;
     width: 100%;
     margin-top: 0;
-    // z-index: 0;
+}
+
+h1.home-text {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+h3.home-text {
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.img-circle {
+    width: 200px;
+    height: 200px;
 }
 
 .about,
@@ -89,5 +103,6 @@ img:hover {
     padding: 2em;
 }
 
+// -----------Forms------------
 // -----------Resources------------
 // -----------Categories------------
