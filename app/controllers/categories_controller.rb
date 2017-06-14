@@ -15,6 +15,13 @@ class CategoriesController < ApplicationController
 
   def show
   	@category = Category.find(params[:id])
+    @places = []
+    @category.resources.each do |r|
+      obj = { lat: r.latitude, lng: r.longitude }
+      @places.push(obj)
+    end
+    @places = @places.to_json
+    # puts @places
   end
 
   def create
