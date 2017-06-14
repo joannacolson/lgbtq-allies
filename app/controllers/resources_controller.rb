@@ -1,6 +1,15 @@
+require 'json'
+
 class ResourcesController < ApplicationController
   def index
   	@resources = Resource.all.order(:name)
+    @places = []
+    @resources.each do |r|
+      obj = { lat: r.latitude, lng: r.longitude }
+      @places.push(obj)
+    end
+    @places = @places.to_json
+    puts @places
   end
 
   def new

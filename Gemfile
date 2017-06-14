@@ -35,6 +35,7 @@ gem 'jquery-rails'
 gem 'gmaps4rails'
 gem 'underscore-rails'
 gem 'geocoder'
+gem 'json'
 
 
 # Use Capistrano for deployment
