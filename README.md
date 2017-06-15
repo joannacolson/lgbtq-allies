@@ -1,13 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+LGBTQ Allies is a resource to identify resources (businesses and facilities) whose owners identify as being LGBTQ-Friendly.
 
-Things you may want to cover:
+* Ruby version: 2.4.0
 
-* Ruby version
+* System Dependencies:
 
-* System dependencies
+gems: bootstrap-sass, jquery-rails, gmaps4rails, underscore-rails, geocoder, json, omniauth-twitter, omniauth-facebook, foreman
+
+* Whiteboard Wireframe:
+
+![allieswireframe](https://user-images.githubusercontent.com/19542995/27203461-cd2ed9a6-51da-11e7-989a-288b14464360.JPG)
 
 * Configuration
 

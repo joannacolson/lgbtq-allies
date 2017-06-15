@@ -36,8 +36,16 @@ gem 'gmaps4rails'
 gem 'underscore-rails'
 gem 'geocoder'
 gem 'json'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'foreman'
 
 gem 'rails_12factor', group: :production
+
+#browser-sync to make life easier
+group :development do
+  gem 'browser_sync_rails'
+end
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

@@ -9,7 +9,132 @@
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
+ *= require_tree .
+ *= require_self
  */
 
+// Imports
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import 'bootstrap/theme';
+// =============Custom CSS=============
+// -----------Global------------
+body {
+    background-color: #c7cabc;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h3,
+h5 {
+    color: white;
+}
+
+// -----------Nav------------
+.navbar-brand {
+    height: 100%;
+    padding: .5em;
+}
+
+nav.navbar.navbar-default {
+    margin-bottom: 0;
+    background: linear-gradient(115deg, black 20%, #013b51)
+}
+
+.navbar-toggle {
+    margin-right: 16px;
+    margin-top: 16px;
+}
+
+// -----------Home Page------------
+.home-image-div h1,
+h3 {
+    font-family: 'Bubbler One', sans-serif;
+}
+
+.home-image-div {
+    background-image: url("/assets/cityscape.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 10em 0 10em 0;
+}
+
+.home-text {
+    position: relative;
+    left: 0;
+    width: 100%;
+    margin-top: 0;
+}
+
+h1.home-text {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+h3.home-text {
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.img-circle {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+.about,
+.testimonials,
+.img-circle {
+    box-shadow: 0 0 4px black;
+}
+
+img:hover {
+    opacity: 0.8;
+    transition: .5s ease;
+}
+
+.people,
+.about {
+    margin: 5em 0;
+}
+
+.testimonials,
+.about {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    padding: 2em;
+}
+
+// -----------Forms------------
+.form-control {}
+
+.form-control {
+    background-color: white;
+    border: 0;
+    box-shadow: none;
+    border-bottom: 1px solid black;
+}
+
+.btn {
+    background-color: #013b51;
+}
+
+.btn:hover {
+    background-color: #bad7e2;
+}
+
+#multi_markers {
+    height: 45vw;
+}
+
+#multi_markers2 {
+    height: 45vw;
+}
+
+// -----------Resources------------
+// -----------Categories------------
