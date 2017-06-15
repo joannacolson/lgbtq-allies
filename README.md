@@ -8,6 +8,8 @@ LGBTQ Allies is a resource to identify resources (businesses and facilities) who
 
 gems: bootstrap-sass, jquery-rails, gmaps4rails, underscore-rails, geocoder, json, omniauth-twitter, omniauth-facebook, foreman
 
+* Whiteboard Wireframe:
+
 * Configuration
 
 * Database creation
