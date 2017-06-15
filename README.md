@@ -10,6 +10,8 @@ gems: bootstrap-sass, jquery-rails, gmaps4rails, underscore-rails, geocoder, jso
 
 * Whiteboard Wireframe:
 
+![allieswireframe](https://user-images.githubusercontent.com/19542995/27203461-cd2ed9a6-51da-11e7-989a-288b14464360.JPG)
+
 * Configuration
 
 * Database creation
