@@ -37,6 +37,7 @@ gem 'underscore-rails'
 gem 'geocoder'
 gem 'json'
 
+gem 'rails_12factor', group: :production
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
