@@ -44,14 +44,10 @@
 						<li><a href="/categories">View Categories</a></li>
 	      	<% end %>
 				</ul>
-
-
-
-
 			</div>
   	</div>
   </nav>
-  <div class="container">
+  <div>
   	<% flash.each do |key, value| %>
     	<div id="alerts" class="alert alert-<%= key %>">
       	<%= value %>
