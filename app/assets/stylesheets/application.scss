@@ -19,7 +19,7 @@
 // =============Custom CSS=============
 // -----------Global------------
 body {
-    background-color: #88a7aa;
+    background-color: white;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -109,5 +109,22 @@ img:hover {
 }
 
 // -----------Forms------------
+.form-control {}
+
+.form-control {
+    background-color: white;
+    border: 0;
+    box-shadow: none;
+    border-bottom: 1px solid black;
+}
+
+.btn {
+    background-color: #013b51;
+}
+
+.btn:hover {
+    background-color: #bad7e2;
+}
+
 // -----------Resources------------
 // -----------Categories------------
