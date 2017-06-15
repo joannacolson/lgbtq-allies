@@ -1,8 +1,8 @@
 <h1 class="text-center">Category: <%= @category.name %></h1>
 
 <!-- Google Maps -->
-<div style='width: 800px;'>
-  <div id="multi_markers2" style='width: 800px; height: 400px;'></div>
+<div class="container">
+  <div id="multi_markers2"></div>
 </div>
 
 <h2 class="text-center">Resources that provide <%= @category.name %></h2>
@@ -21,9 +21,11 @@
 			Category <%= @category.name %> does not have a resource yet.
 		</div>
 	<% end %>
-	<h2>Available Actions:</h2>
-	<%= link_to 'Edit This Category?', edit_category_path(@category), method: :get, :class => "btn btn-warning" %>
-	<%= link_to 'Delete This Category?', category_path(@category), method: :delete, :class => "btn btn-danger" %>
+	<% if current_user %>
+		<h2>Available Actions:</h2>
+		<%= link_to 'Edit This Category?', edit_category_path(@category), method: :get, :class => "btn btn-warning" %>
+		<%= link_to 'Delete This Category?', category_path(@category), method: :delete, :class => "btn btn-danger" %>
+	<% end %>
 </div>
 <script>
 	// console.log('Inside index script');
