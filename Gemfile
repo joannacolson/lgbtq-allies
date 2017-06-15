@@ -36,6 +36,10 @@ gem 'gmaps4rails'
 gem 'underscore-rails'
 gem 'geocoder'
 gem 'json'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'foreman'
+
 
 #browser-sync to make life easier
 group :development do
