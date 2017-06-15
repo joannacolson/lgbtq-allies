@@ -24,7 +24,9 @@
 			Resource <%= @resource.name %> does not have a category yet.
 		</div>
 	<% end %>
-	<h2>Available Actions:</h2>
-	<%= link_to 'Edit This Resource?', edit_resource_path(@resource), method: :get, :class => "btn btn-warning" %>
-	<%= link_to 'Delete This Resource?', resource_path(@resource), method: :delete, :class => "btn btn-danger" %>
+	<% if current_user %>
+		<h2>Available Actions:</h2>
+		<%= link_to 'Edit This Resource?', edit_resource_path(@resource), method: :get, :class => "btn btn-warning" %>
+		<%= link_to 'Delete This Resource?', resource_path(@resource), method: :delete, :class => "btn btn-danger" %>
+	<% end %>
 </div>

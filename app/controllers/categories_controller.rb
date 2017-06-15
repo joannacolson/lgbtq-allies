@@ -17,8 +17,10 @@ class CategoriesController < ApplicationController
   	@category = Category.find(params[:id])
     @places = []
     @category.resources.each do |r|
-      obj = { lat: r.latitude, lng: r.longitude }
-      @places.push(obj)
+      if r.latitude && r.longitude # if both have geocode values
+        obj = { lat: r.latitude, lng: r.longitude, infowindow: r.name }
+        @places.push(obj)
+      end
     end
     @places = @places.to_json
     # puts @places
