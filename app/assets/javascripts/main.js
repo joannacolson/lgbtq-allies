@@ -1,6 +1,7 @@
 $(document).ready(function() {
-    console.log('jquery connected');
+    // console.log('jquery connected');
     // $('.collapse').collapse();
+
 
     $("#alerts").fadeTo(3000, 500).slideUp(500, function() {
         $("#alerts").slideUp(500);
