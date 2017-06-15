@@ -4,11 +4,11 @@
 	<%= form_for @resource do |f|  %>
 		<div class="form-group">
 			<%= f.label :name %>
-			<%= f.text_field :name, :class => "form-control", :value => @resource.name %>
+			<%= f.text_field :name, :class => "form-control", :value => @resource.name, :required => true %>
 		</div>
 		<div class="form-group">
 			<%= f.label :address %>
-			<%= f.text_field :address, :class => "form-control", :value => @resource.address %>
+			<%= f.text_field :address, :class => "form-control", :value => @resource.address, :required => true %>
 		</div>
 		<div class="form-group">
 			<%= f.label :website %>
