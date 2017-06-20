@@ -33,8 +33,9 @@
 						<li class="active"><a href="/">Home</a></li>
 						<li><a href="/resources">View Resources</a></li>
 						<li><a href="/categories">View Categories</a></li>
-						<li><a href="/resources/new">Add New Resource</a></li>
-						<li><a href="/categories/new">Add New Category</a></li>
+						<!-- Deactivated this logic to prevent unwanted data added on Heroku -->
+						<!-- <li><a href="/resources/new">Add New Resource</a></li> -->
+						<!-- <li><a href="/categories/new">Add New Category</a></li> -->
 	          <li><%= link_to 'Log Out', logout_path, method: :delete %></li>
 	     		<% else %>
 	     			<li><%= link_to 'Facebook', '/auth/facebook' %></li>
